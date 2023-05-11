@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "MarvelApp"
+include ':app', ':presentation', ':data', ':domain', ':core'
+project(':presentation').projectDir = new File('submodules/MarvelPresentation/presentation')
+project(':data').projectDir = new File('submodules/MarvelData/data')
+project(':domain').projectDir = new File('submodules/MarvelPresentation/submodules/MarvelDomain/domain')
+project(':core').projectDir = new File('submodules/MarvelPresentation/submodules/MarvelCore/core')

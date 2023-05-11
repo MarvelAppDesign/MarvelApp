@@ -1,0 +1,6 @@
+[submodule "submodules/MarvelPresentation"]
+	path = submodules/MarvelPresentation
+	url = https://github.com/MarvelAppDesign/MarvelPresentation.git
+[submodule "submodules/MarvelData"]
+	path = submodules/MarvelData
+	url = https://github.com/MarvelAppDesign/MarvelData.git
